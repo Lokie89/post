@@ -6,7 +6,9 @@ https://git-scm.com/docs/git
 # Git Command
 ### add
     
-### clone
+### clone :
+    git clone [path] [name] : path의 파일들을 name 이름의 폴더에 복사해옴
+    git clone -b [branchName] [path] [name] : path의 파일들 중 branchName 에 해당하는 특정 브랜치를 복사해옴 
 
 ### revert : 
 ### reset : 
