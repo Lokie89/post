@@ -67,6 +67,8 @@ https://git-scm.com/docs/git
                 --worktree : add, update configuration in this file ?
 ### checkout :
     git checkout -p [branch] [file] : branch의 file만 가져와서 패치함
+    git checkout HEAD~N : N번 전의 commit 내역으로 새로운 브랜치 생성하여 코드 반환
+    git checkout 8553f : 8553f의 commit 내역으로 새로운 브랜치 생성하여 코드 반환
 ### common options
 
 ###### -v, --verbose    : 상세하게 보여줌 
