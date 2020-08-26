@@ -5,6 +5,17 @@ https://git-scm.com/docs/git
 
 # Git Command
 ### add
+    git add . : 수정 된 ( 추가 삭제 포함 ) 모든 파일 ( untracked 포함 )들을 staging 에 올려놓음
+    git add --all : 수정 된 ( 추가 삭제 포함 ) 모든 파일 ( untracked 비포함 )들을 staging 에 올려놓음
+    git add [filename] : filename (들) 을 staging 에 올려놓음
+    git add -p : 수정 된 ( 추가 삭제 포함 ) 모든 파일 ( untracked 비포함 ) 들을
+                 변경 된 사항을 단위 별 ( hunk ) 로 확인하면서 [ y,n,q,a,d,/,s,e ] 명령어를 통해
+                 추가할지 말지를 정할 수 있음
+                 y : staging 함
+                 n : staging 안함
+                 q : quit
+                 a : staging 하고 뒤에 나머지도 다 staging 함
+                 d : staging 안하고 뒤에 나머지도 다 staging 안함
     
 ### clone :
     git clone [path] [name] : path의 파일들을 name 이름의 폴더에 복사해옴
