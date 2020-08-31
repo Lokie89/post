@@ -80,6 +80,17 @@ https://git-scm.com/docs/git
     git checkout -p [branch] [file] : branch의 file만 가져와서 패치함
     git checkout HEAD~N : N번 전의 commit 내역으로 새로운 브랜치 생성하여 코드 반환
     git checkout 8553f : 8553f의 commit 내역으로 새로운 브랜치 생성하여 코드 반환
+    
+    
+### push 삭제 :
+    현재 push 가 된 상태라면
+    git reset --hard HEAD~? : ?번까지 commit 내역을 돌림 ( local 반영 )
+    git push origin master -f : 강제 push ( remote 반영 )
+    
+    // 만약 push 만 삭제하고 코드는 다시 되돌리려면
+    git reflog : 돌아갈 ( reset ) 한 내역 확인
+    git reset HEAD@{?} : reflog 로 확인한 숫자 ? 넣어줌 ( local 반영 )
+     
 ### common options
 
 ###### -v, --verbose    : 상세하게 보여줌 
