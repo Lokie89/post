@@ -52,6 +52,7 @@ https://git-scm.com/docs/git
     git stash show -p : 가장 최근의 stash 를 사용하여 패치를 만들고 거꾸로 적용
     git apply -R : 위와 동일
     git stash show -p [name] : 이름에 해당하는 stash 를 사용하여 패치를 만들고 거꾸로 적용
+    git stash push -m [message] [directory] : 해당 디렉토리를 스택에 메시지로 저장 ( -m [message] 은 옵션임 )
 
 ### branch :
     git branch : 브랜치 목록 보여줌
