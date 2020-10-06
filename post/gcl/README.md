@@ -47,8 +47,14 @@ https://git-scm.com/docs/git
     git stash list : stash 목록 확인하기
     git stash apply : 가장 최근의 stash 가져와 적용
     git stash apply [name] : 이름에 해당하는 stash 가져와 적용
+    * stash apply 시 conflict
+        충돌 났을 경우 해당 파일에 가보면 변경 내용을 보여줌 ( IDE 가 해주는 것 같음 )
+        해당 파일을 수정한 후 add ( staging ) 하면 된다.
     git stash drop : 가장 최근의 stash 를 제거
     git stash drop [name] : 이름에 해당하는 stash 를 제거
+    * stash drop 시 다시 가져오고 싶은 경우
+        터미널을 끄지 않은 상태라면 drop 후 stash hash code? 가 남아있음
+        그 내용을 git stash apply [hash code] 를 통하여 적용한 후 다시 stash 하면 됨
     git stash show -p : 가장 최근의 stash 를 사용하여 패치를 만들고 거꾸로 적용
     git apply -R : 위와 동일
     git stash show -p [name] : 이름에 해당하는 stash 를 사용하여 패치를 만들고 거꾸로 적용
