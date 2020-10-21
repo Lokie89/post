@@ -21,7 +21,14 @@ https://git-scm.com/docs/git
     git clone [path] [name] : path의 파일들을 name 이름의 폴더에 복사해옴
     git clone -b [branchName] [path] [name] : path의 파일들 중 branchName 에 해당하는 특정 브랜치를 복사해옴 
 
-### revert : 
+### revert :
+    git revert [commit] : commit 을 안한 상태로 되돌려줌
+                          이 상태로 push 하면 내역에 revert 내용이 자동 커밋됨
+                          추가로 reset 을 통하여 커밋을 되돌리는 방법도 있다.
+                          이 때 되돌린 내용을 반영하면 해당 커밋내역은 삭제되므로
+                          ( 중간에 pull 받은 사람이 있을 수도 있고 )
+                          위의 revert 방법을 쓰는편이 더 나은것 같다.
+                          
 ### reset : 
     add 일 경우 : git reset
     commit 일 경우 : git reset [options] HEAD^ - 첫번째 commit 삭제
