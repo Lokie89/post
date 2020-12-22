@@ -104,7 +104,11 @@ https://git-scm.com/docs/git
     // 만약 push 만 삭제하고 코드는 다시 되돌리려면
     git reflog : 돌아갈 ( reset ) 한 내역 확인
     git reset HEAD@{?} : reflog 로 확인한 숫자 ? 넣어줌 ( local 반영 )
-     
+
+### rm :
+    git rm [file] : git 저장소 ( 원격, 로컬 ) 에서 file 삭제
+    git rm --cached [file] : git 저장소 ( 원격 ) 에서 file 삭제 ( Tracking 된 파일을 제거 )
+    
 ### common options
 
 ###### -v, --verbose    : 상세하게 보여줌 
